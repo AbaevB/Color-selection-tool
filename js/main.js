@@ -14,9 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
+  /**Окрашивание
+     * текста в блоке
+     */
+    function paintText(){
+      colorBlock.style.color = colorTextInput.value;
+    }
+
 
   colorInput.addEventListener('input', paintBlock);
+  colorTextInput.addEventListener('input', paintText);
 
   // Вызов функций
+  paintText();
   paintBlock();
 });
