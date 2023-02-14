@@ -1,1 +1,3 @@
-# Color-selection-tool
+# Color Selection Tool
+
+Простой и удобный инструмент для подбора фонового цвета к цвету текста. Написан на *JavaScript*
