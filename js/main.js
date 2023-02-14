@@ -21,6 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
       colorBlock.style.color = colorTextInput.value;
     }
 
+    /**Сброс цвета
+     * функция для кнопки
+     */
+
+    function clearColors(){
+      colorBlock.style.removeProperty('background-color');
+      colorInput.value = 'blue';
+      colorBlock.style.removeProperty('color');
+      colorTextInput.value = 'white';
+    }
+
 
   colorInput.addEventListener('input', paintBlock);
   colorTextInput.addEventListener('input', paintText);
@@ -28,4 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Вызов функций
   paintText();
   paintBlock();
+
+   /**Очищающая
+     * кнопка
+     */
+
+   clearButton.addEventListener('click', clearColors);
+
+
 });
